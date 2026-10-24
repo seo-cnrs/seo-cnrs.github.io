@@ -3,7 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Teaching &mdash; Hyewon Seo</title>
+<title>Enseignements &mdash; Hyewon Seo</title>
+<link rel="alternate" hreflang="en" href="Teaching_en.html">
+<link rel="alternate" hreflang="fr" href="Teaching.html">
 <style>
   :root {
     --navy: #000080;
@@ -18,6 +20,16 @@
     margin: 0 auto;
     padding: 0 1rem 3rem;
   }
+  .lang {
+    margin: .6rem 0 .3rem;
+    text-align: right;
+    font-size: .95rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .lang a { color: var(--navy); text-decoration: none; }
+  .lang a:hover, .lang a:focus { text-decoration: underline; }
+  .lang .cur { font-weight: bold; color: #111; }
+  .lang .sep { color: #777; padding: 0 .3rem; }
   nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -39,11 +51,28 @@
   nav a:hover,
   nav a:focus { text-decoration: underline; }
   nav a[aria-current="page"] { background: #c8c8c8; }
+  .page-title {
+    margin: 2.5rem 0 0;
+    text-align: center;
+    font-size: 1.65rem;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #000;
+  }
+  .toc {
+    margin: 1rem 0 0;
+    text-align: center;
+    font-size: 1.05rem;
+    line-height: 1.4;
+  }
+  .toc a { white-space: nowrap; }
+  .toc .sep { color: #777; padding: 0 .35rem; }
   h1 {
     font-size: 1.45rem;
     margin: 2.2rem 0 1rem;
     padding-bottom: .3rem;
     border-bottom: 1px solid var(--rule);
+    scroll-margin-top: 1rem;
   }
   p { margin: 0 0 1rem; text-align: justify; }
   ul.courses { list-style: none; margin: 0; padding: 0; }
@@ -55,7 +84,11 @@
 </style>
 </head>
 <body>
- 
+
+<p class="lang">
+  <a href="Teaching_en.html" hreflang="en">En</a><span class="sep">|</span><span class="cur">Fr</span>
+</p>
+
 <nav>
   <ul>
     <li><a href="index.html">Home</a></li>
@@ -64,47 +97,55 @@
     <li><a href="Teaching.html" aria-current="page">Teaching</a></li>
   </ul>
 </nav>
- 
-<h1>Enseignements à l’Université de Strasbourg, ENSIIE et TPS</h1>
- 
+
+<p class="page-title">Activités d’enseignement de Hyewon Seo</p>
+
+<p class="toc">
+  <a href="#Strasbourg">Université de Strasbourg, ENSIIE et TPS</a><span class="sep">|</span>
+  <a href="#Chungnam">Université Nationale de Chungnam</a><span class="sep">|</span>
+  <a href="#Autres">Autres activités</a>
+</p>
+
+<h1 id="Strasbourg">Enseignements à l’Université de Strasbourg, ENSIIE et TPS</h1>
+
 <ul class="courses">
- 
+
   <li><strong>Ingénierie de l'Interaction et réalité virtuelle (Master ISI, Université de
   Strasbourg)</strong> : dans mon module «&nbsp;Modélisation d’humains virtuels&nbsp;», je donne
   6&nbsp;h de CM pour introduire les techniques de modélisation et d’animation des humains
   virtuels : corps, visage et vêtements.</li>
- 
+
   <li><strong>Medical Robotics Intensive Course (Master et doctorants venant de Paris,
   Strasbourg et des États-Unis)</strong> : dans mon module
   <a href="./GMVR.zip">«&nbsp;Geometric Modeling and Virtual Reality&nbsp;»</a>, je donne 4&nbsp;h
   de CM couvrant les sujets suivants : système graphique, représentation de maillage polygonal,
   détection de collisions, structures de données pour la gestion de l’espace 3D et techniques de
   rendu temps réel pour la réalité virtuelle.</li>
- 
+
   <li><strong>Anglais Disciplinaire (L3, Université de Strasbourg)</strong> : chaque semestre, je
   donne 4&nbsp;h de TD sur l’historique et l’introduction de l’informatique graphique. Le but est
   de renforcer la capacité de lire et de présenter les articles scientifiques en anglais.</li>
- 
+
   <li><strong>Géométrie et synthèse d'images I (Master, Télécom Physique Strasbourg)</strong> :
   cours d’introduction à l’informatique graphique. Enseignement des différentes étapes du pipeline
   graphique : modélisation géométrique de base, transformations, projection, clipping,
   illumination, application de textures, calcul des surfaces cachées, antialiasing et
   rastérisation.</li>
- 
+
   <li><strong>Géométrie et synthèse d'images II (Master, Télécom Physique Strasbourg)</strong> :
   cours avancé en informatique graphique. Modélisation géométrique à l’aide de modèles
   hiérarchiques, méthodes d’optimisation et de subdivision de l’espace pour le rendu temps
   réel.</li>
- 
+
   <li><strong>Compilation (1<sup>re</sup> année ingénieur, ENSIIE)</strong> : introduction des
   techniques de base pour le compilateur. Analyse syntaxique et analyse sémantique (l’analyse
   lexicale, parsing et parseurs), sélection d’instruction, graphe de flot de contrôle,
   explicitation des conventions d’appel, allocation de registres.</li>
- 
+
   <li><strong>Génie Logiciel (M1, Université de Strasbourg)</strong> : 26,25&nbsp;HED de CM et TP
   sur les sujets suivants : gestion de projet, contrôle de version, outils de programmation et
   documentation, planification de système, etc.</li>
- 
+
   <li><strong>Modélisation 3D et Simulation (Master IRIV, Télécom Physique Strasbourg)</strong> :
   dans mon module «&nbsp;Acquisition et reconstruction de déformation&nbsp;», je donne environ
   5&nbsp;h de CM et 2&nbsp;h de TP sur la représentation de surface, la déformation et la
@@ -118,62 +159,62 @@
       <li><a href="./4.2 face modeling.pdf">Deformation methods II</a></li>
     </ul>
   </li>
- 
+
   <li><strong>Algorithmique et Programmation 2 (L1, Université de Strasbourg)</strong> : ce cours
   est normalement divisé en 3 groupes, assurés par 4 ou 5 enseignants. Je me suis occupée d’un de
   ces groupes pour les 22&nbsp;h de TP en 2016/2017 et 19&nbsp;h de CI en 2017/2018 et 2018/2019,
   sur la programmation en langage C.</li>
- 
+
 </ul>
- 
-<h1>Enseignements à l’Université Nationale de Chungnam</h1>
- 
+
+<h1 id="Chungnam">Enseignements à l’Université Nationale de Chungnam</h1>
+
 <ul class="courses">
- 
+
   <li><strong>Algorithmique et programmation niveau I et II</strong> : introduction au langage de
   programmation (I) et niveau avancé en programmation (II), avec pratique de la programmation en
   langage C.</li>
- 
+
   <li><strong>Informatique graphique</strong> : cours d’introduction à la programmation pour
   l’informatique graphique 3D interactive. Le cours comporte une partie théorique et un TP avec
   OpenGL.</li>
- 
+
   <li><strong>Structures de données et programmation I</strong> : enseignement des types abstraits
   de structures de données et de représentation de données : files, piles, listes chaînées,
   graphes et arbres binaires. Les algorithmes de base sont étudiés avec le calcul de leur
   complexité en temps et en espace.</li>
- 
+
   <li><strong>Réalité virtuelle</strong> : introduction aux technologies de réalité virtuelle et à
   ses applications. Thèmes abordés : périphériques d’entrée et de sortie, architecture avec une
   étude poussée sur les périphériques pour le rendu temps réel, programmation, prise en compte du
   facteur humain et applications émergentes.</li>
- 
+
   <li><strong>Cours de niveau avancé en informatique graphique</strong> : présentation et
   discussion des thèmes de niveau avancé en informatique graphique 3D : scalable graphics,
   optimisation de pipeline graphique, gestion de scènes 3D, skinning, détection de
   collisions.</li>
- 
+
   <li><strong>Animation par ordinateur</strong> : introduction à l’informatique graphique 3D et à
   l’animation par ordinateur. Thèmes : représentation et transformation des objets graphiques,
   techniques de déformation 3D, techniques de capture de données, animation faciale, animation de
   caractères (images-clés, cinématique et cinématique inverse), simulation de vêtements et
   animation comportementale.</li>
- 
+
 </ul>
- 
-<h1>Autres activités d'enseignement</h1>
- 
+
+<h1 id="Autres">Autres activités d'enseignement</h1>
+
 <ul class="courses">
- 
+
   <li><strong>Cours spécifiques pour les élèves de lycée</strong> : cours sur la logique
   algorithmique pour résoudre des problèmes spécifiques, et pratique de la programmation pour des
   élèves sélectionnés au niveau régional.</li>
- 
+
   <li><strong>Cours individuels pour les élèves de lycée</strong> : des vingt étudiants de la
   classe précédente «&nbsp;Cours spécifiques pour les élèves de lycée&nbsp;», trois ont été
   sélectionnés pour le niveau avancé.</li>
- 
+
 </ul>
- 
+
 </body>
 </html>
