@@ -11,9 +11,11 @@
   p             { margin: 1em 0; font: 12pt "Times New Roman", serif; }
 
   h1            { margin: 1em 0; text-indent: 6.75pt; background: white;
-                  font: bold 16pt "Times New Roman", serif; color: black; }
+                  font: bold 16pt "Times New Roman", serif; color: black;
+                  scroll-margin-top: 1rem; }
   h2            { margin: 0 0 1em 0;
-                  font: bold 13pt "Times New Roman", serif; }
+                  font: bold 13pt "Times New Roman", serif;
+                  scroll-margin-top: 1rem; }
 
   ul            { margin-bottom: 0; }
 
@@ -31,6 +33,14 @@
                   font: bold 17pt "Times New Roman", serif; color: navy; }
   table.nav a,
   table.nav a:visited { color: navy; }
+
+  /* Page title and section links */
+  .page-title   { margin: 2.2em 0 0; text-align: center; line-height: 1.2;
+                  font: bold 20pt "Times New Roman", serif; color: black; }
+  .toc          { margin: .9em 0 0; text-align: center; line-height: 1.4;
+                  font: 14pt "Times New Roman", serif; }
+  .toc a        { white-space: nowrap; }
+  .toc .sep     { color: #777; padding: 0 .35em; }
 
   /* Supervised-students table */
   table.students            { margin-left: 5.4pt; border-collapse: collapse; }
@@ -60,9 +70,16 @@
   </tr>
 </table>
 
-<h1>* Job offer</h1>
+<p class="page-title">Students and Job Offers of Hyewon Seo</p>
 
-<h2>Closed positions (2024)</h2>
+<p class="toc">
+  <a href="#JobOffer">Job offer</a><span class="sep">|</span>
+  <a href="#Students">Students supervised (2000&ndash;)</a>
+</p>
+
+<h1 id="JobOffer">* Job offer</h1>
+
+<h2 id="y2024">Closed positions (2024)</h2>
 <ul>
   <li><strong>PhD:</strong>
     <ul>
@@ -73,7 +90,7 @@
 
 <br><br>
 
-<h2>Closed positions (2023)</h2>
+<h2 id="y2023">Closed positions (2023)</h2>
 <ul>
   <li>
     <p><strong>Postdoc:</strong> <strong><a href="https://seo-cnrs.github.io/StudentsJoboffer_files/Postdoc_2023.pdf">To be announced...</a></strong></p>
@@ -104,8 +121,7 @@
 
 <br><br>
 
-<h2>Closed positions (2022)</h2>
-<!-- <li><p><strong>Postdoc:</strong> <strong><a href="https://seo-cnrs.github.io/StudentsJoboffer_files/Postdoc_2022.pdf">Photo-Realistic, Physics-Aware 4D Human Modeling for Real-World Human Cognition by Care-Robots for Aged People</a></strong></p></li> -->
+<h2 id="y2022">Closed positions (2022)</h2>
 <ul>
   <li>
     <p><strong>Ph.D:</strong> <strong><a href="https://seo-cnrs.github.io/StudentsJoboffer_files/PhD_2022.pdf">4D Human Modeling for Real-World Human Cognition by Care-Robots for Aged People</a></strong> =&gt; Position filled.</p>
@@ -122,7 +138,7 @@
   </li>
 </ul>
 
-<h2>Closed positions (2021)</h2>
+<h2 id="y2021">Closed positions (2021)</h2>
 <ul>
   <li><strong>Ph.D</strong>.:
     <ul>
@@ -145,7 +161,7 @@
   </li>
 </ul>
 
-<h2>Closed positions (2020)</h2>
+<h2 id="y2020">Closed positions (2020)</h2>
 <ul class="tnr" type="disc">
   <li><strong>Ph.D</strong>.:
     <ul type="circle">
@@ -156,14 +172,14 @@
   <li><strong>Stage M2 (avec la possibilité d'une thèse):</strong> <a href="sujetM2_Human4D.pdf">Analysis and Synthesis of Human Body Shape in Motion(financed by the French National project 'Human4D')</a></li>
 </ul>
 
-<h2>Closed positions (2019)</h2>
+<h2 id="y2019">Closed positions (2019)</h2>
 <ul class="tnr" type="disc">
   <li><strong>Stage du master ou engineer/Master or engineer student internship:</strong> Le traitement des données de scan 4D (compétences requises: python, matlab, 3ds max (facultatif)).</li>
   <li><strong>Stage du master ou engineer/Master or engineer student internship :</strong> L’évaluation de résultats visuels par des humains.</li>
   <li><strong>Stage de license ou master/ Master or bachelor internship:</strong> La création des pages web pour une conférence internationale, qui aura lieu à Strasbourg en 2020. / Creation of webpages for an international conference which will be held in 2020.</li>
 </ul>
 
-<h2>Closed positions</h2>
+<h2 id="yEarlier">Closed positions (earlier)</h2>
 <ul class="tnr" type="disc">
   <li><strong>Internship:</strong> I can fund one or two good Master students for an internship with me in my group per year. Please send (1) your CV (2) with one or more recommendation letters by email between September and December. Here is the list of topics available:</li>
 </ul>
@@ -174,7 +190,7 @@
 
 <p class="indent">- <a href="http://icube-igg.unistra.fr/fr/img_auth.php/2/2c/RecalageAtas2015.pdf">Construction d'un atlas statistique pour la modélisation et le recalage de maillages dynamiques</a>. Co-supervision with Christian Heinrich (Univ. Strasbourg), <a href="http://www.mage.fst.uha.fr/cordier/">Frederic Cordier</a> (Univ. Haute Alsace)</p>
 
-<h1>* Students supervised (2000-)</h1>
+<h1 id="Students">* Students supervised (2000-)</h1>
 
 <table class="students">
   <tr>
@@ -184,7 +200,7 @@
     <th class="col-wide">Engineers / Master projects</th>
   </tr>
 
-  <tr>
+  <tr id="sPresent">
     <td class="period">Present</td>
     <td>
       <p>- Do Thanh Dat Le (2026-, Univ. Strasbourg), with Kangsoo Jung and Mathieu Anheim</p>
@@ -193,16 +209,11 @@
       <p>- Jérôme Dubois (2025-, Univ. Strasbourg)</p>
       <p>- Chaima Hammami (2025-, Univ. Strasbourg), with Stephane Kremer</p>
     </td>
-    <td>
-      <p>- Baha Fraoua (2026, Ecole Polytechnique de Tunis).</p>
-    </td>
-    <td>
-      <p>- Solene Besancon (2026, CMI Master I3D, avec Arash Habibi).</p>
-      <p>- Florentin Philippon (2026, IUT Saint-Dié-des-Vosges).</p>
-    </td>
+    <td></td>
+    <td></td>
   </tr>
 
-  <tr>
+  <tr id="sFrance">
     <td class="period">While in France (2010-)</td>
     <td>
       <p>- Diwei Wang (2021-2025, Univ. Strasbourg), with Frederic Blanc.</p>
@@ -215,6 +226,7 @@
       <p>- Haejoon Kim (2015-2016, POSTECH, Corée du Sud) with Seungyong Lee.</p>
     </td>
     <td>
+      <p>- Baha Fraoua (2026, Ecole Polytechnique de Tunis).</p>
       <p>- Nicolas Thiou (2025, Université de Dauphine).</p>
       <p>- Chaima Hammami (2025, Ecole Polytechnique de Tunis).</p>
       <p>- Son Hai Nguyen (2025, Université de Côte d’Azur).</p>
@@ -233,14 +245,15 @@
       <p>- Irada Bunyatova (2021, Master AI &amp; Advanced Visual Computing, Ecole Polytechnique).</p>
       <p>- Hui Dai (2020, Master IRIV, TPS).</p>
       <p>- Kaifeng Zou (2020, Master IRIV, TPS).</p>
-      <p>- Cédric Bobenrieth (2016, Univ. Bourgogne).</p>
-      <p>- Lan Thảo (2015, INSA Lyon), with Guillaume Lavoué, Chaker Larabi, Frederic Cordier.</p>
-      <p>- Chakib Bensekka (2014, Univ. Strasbourg) with Arash Habibi, Frederic Cordier.</p>
-      <p>- Yvan Pin (2015-, Master IRIV@TPS)</p>
+      <p>- Cédric Bobenrieth (2016, Univ. Bourgogne) with Frederic Cordier, Arash Habibi.</p>
       <p>- Sylvain Barlet (2016, Univ. Limoge) with Guoliang Luo and Frederic Cordier.</p>
-      <p>- Cédric Bobenrieth (2016, Univ. Dijon) with Frederic Cordier, Arash Habibi.</p>
+      <p>- Lan Thảo (2015, INSA Lyon), with Guillaume Lavoué, Chaker Larabi, Frederic Cordier.</p>
+      <p>- Yvan Pin (2015-, Master IRIV@TPS)</p>
+      <p>- Chakib Bensekka (2014, Univ. Strasbourg) with Arash Habibi, Frederic Cordier.</p>
     </td>
     <td>
+      <p>- Solene Besancon (2026, CMI Master I3D, avec Arash Habibi).</p>
+      <p>- Florentin Philippon (2026, IUT Saint-Dié-des-Vosges).</p>
       <p>- Raphel Philippon (2025, ICAM Europe).</p>
       <p>- Florian Riotte (2025, 3iL Ingénieurs).</p>
       <p>- Florentin Philippon (2025, IUT Saint-Dié-des-Vosges).</p>
@@ -258,7 +271,6 @@
       <p>- Paul Viville (2015, Univ. Strasbourg) with Frederic Cordier et Nicolas Padoy.</p>
       <p>- Guillaume Peiffert (2014, Univ. Strasbourg): with Frederic Cordier, Nicolas Padoy.</p>
       <p>- Yassine Jazouani (2014, Univ. Strasbourg) with Frederic Cordier, Nicolas Padoy, Frederic Larue.</p>
-      <p>- Guillaume Peiffert (2014, Univ. Strasbourg): with Frederic Cordier.</p>
       <p>- Maxime Clog (2014, Univ. Strasbourg), with Frederic Cordier.</p>
       <p>- Tian Tian (2013, ENSIIE)</p>
       <p>- Shuyan Zhang (2013, ENSIIE) with Guoliang Luo.</p>
@@ -269,7 +281,7 @@
     </td>
   </tr>
 
-  <tr>
+  <tr id="sKorea">
     <td class="period">While in Korea (2004-2009)</td>
     <td>
       <p>- Woojin Choi (2008- 2010, Hong-Ik University), with HyungYun Choi.</p>
@@ -303,7 +315,7 @@
     </td>
   </tr>
 
-  <tr>
+  <tr id="sSwitzerland">
     <td class="period">While in Switzerland (2000-2004)</td>
     <td></td>
     <td>
